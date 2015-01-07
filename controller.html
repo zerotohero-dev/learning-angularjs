@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+
+</head>
+<body>
+<div class="container" ng-controller="SimpleController">
+    <h3>Simple Controller</h3>
+
+    <input type="text" ng-model="name">
+
+    <ul>
+        <li ng-repeat="cust  in customers | filter: name">{{cust.name + ' ' + cust.city}}</li>
+    </ul>
+</div>
+
+<script src="js/vendor/angular/angular.js"></script>
+<script src="js/controllers/simple.js"></script>
+</body>
+</html>

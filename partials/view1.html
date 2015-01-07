@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>View 1</h2>
+    <p>Name:</p>
+    <p><input type="text" ng-model="name"></p>
+    <ul>
+    <li ng-repeat="cust in customers"></li>
+    </ul>
+
+    <p>Customer Name:</p>
+    <p><input type="text" ng-model="newCustomer.name"></p>
+    <p>Customer City:</p>
+    <p><input type="text" ng-model="newCustomer.city"></p>
+    <p><button ng-click="addCustomer()">Add Customer</button></p>
+</div>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app>
+<head>
+
+</head>
+<body>
+    <p><input id="name" name="name" type="text" ng-model="name"></p>
+
+    <p><label for="name">{{name + 'bazinga'}}</label></p>
+
+    <div class="container" ng-init="names=['lorem', 'ipsum', 'dolor', 'sit']">
+        <h3>Looping the Lopp</h3>
+
+        <ul>
+        <li ng-repeat="name in names">{{name}} {{$index}} {{$first}} {{$middle}} {{$last}}</li>
+        </ul>
+    </div>
+
+    <script src="js/vendor/angular/angular.js"></script>
+</body>
+</html>

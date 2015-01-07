@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app>
+<head>
+
+</head>
+<body ng-init="names=['Sam', 'Liz', 'Jane', 'Jackie']">
+
+<input type="text" ng-model="aText"> {{aText}}
+
+
+<ul ng-init="customers=[{a:'lorem', id:'ipsum'},{a: 'ipsum', id:'lorem'},{a: 'dolor', id:3}]">
+    <li ng-repeat="cust in customers | filter:aText | orderBy: 'id'">hello {{cust.a + ' ' + cust.id}}</li>
+</ul>
+
+<ul>
+<li ng-repeat="personName in names">{{personName}}</li>
+</ul>
+
+<script src="js/vendor/angular/angular.js"></script>
+</body>
+</html>
